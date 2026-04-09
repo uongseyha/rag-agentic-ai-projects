@@ -32,7 +32,7 @@ def get_llm():
     watsonx_llm = WatsonxLLM(
         model_id=model_id,
         url="https://us-south.ml.cloud.ibm.com",
-        apikey=os.environ["IBM_API_KEY"],
+        apikey=os.environ["WATSONX_API_KEY"],
         project_id=project_id,
         params=parameters,
     )
@@ -69,7 +69,7 @@ def watsonx_embedding():
     watsonx_embedding = WatsonxEmbeddings(
         model_id="ibm/slate-125m-english-rtrvr-v2",
         url="https://us-south.ml.cloud.ibm.com",
-        apikey=os.environ["IBM_API_KEY"],
+        apikey=os.environ["WATSONX_API_KEY"],
         project_id=os.environ["IBM_PROJECT_ID"],
         params=embed_params,
     )

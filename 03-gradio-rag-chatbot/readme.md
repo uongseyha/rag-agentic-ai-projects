@@ -28,7 +28,7 @@ The core flow is implemented in [qabot.py](qabot.py).
 
 1. Environment setup
 - Loads secrets from `.env` using `python-dotenv`.
-- Uses `IBM_API_KEY` and `IBM_PROJECT_ID` for watsonx authentication.
+- Uses `WATSONX_API_KEY` and `IBM_PROJECT_ID` for watsonx authentication.
 
 2. User input via Gradio UI
 - User uploads one PDF file.
@@ -103,7 +103,7 @@ pip install -r requirements.txt
 2. Create a `.env` file in this folder with:
 
 ```env
-IBM_API_KEY=your_api_key
+WATSONX_API_KEY=your_api_key
 IBM_PROJECT_ID=your_project_id
 ```
 
