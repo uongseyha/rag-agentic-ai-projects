@@ -40,3 +40,4 @@ Thumbs.db
 
 /.tmp_pkg_meta
 /.gradio
+.gradio/
